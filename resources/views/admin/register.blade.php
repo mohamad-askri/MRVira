@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.rtl.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/register_style.css')}}">
-    <link rel="stylesheet" href="{{asset('node_modules/bootstrap-icons')}}">
 
 
-
-
-    <title>Document</title>
+    <title>Mr.Vira</title>
 </head>
 <body>
 

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: IRANSansXFaNum-Black;
+    src: url("../fonts/woff/IRANSansXFaNum-Black.woff2")format("woff2");
+
+}
+@font-face {
+    font-family: IRANSansXFaNum-Bold;
+    src: url("../fonts/woff/IRANSansXFaNum-Bold.woff2")format("woff2");
+
+}
+@font-face {
+    font-family: IRANSansXFaNum-DemiBold;
+    src: url("../fonts/woff/IRANSansXFaNum-DemiBold.woff2")format("woff2");
+
+}
+@font-face {
+    font-family: IRANSansXFaNum-ExtraBold;
+    src: url("../fonts/woff/IRANSansXFaNum-ExtraBold.woff2")format("woff2");
+
+}
+@font-face {
+    font-family: IRANSansXFaNum-Light;
+    src: url("../fonts/woff/IRANSansXFaNum-Light.woff2")format("woff2");
+
+}
+@font-face {
+    font-family: IRANSansXFaNum-Medium;
+    src: url("../fonts/woff/IRANSansXFaNum-Medium.woff2")format("woff2");
+
+}
+@font-face {
+    font-family: IRANSansXFaNum-Regular;
+    src: url("../fonts/woff/IRANSansXFaNum-Regular.woff2")format("woff2");
+
+}
+
+@font-face {
+    font-family: IRANSansXFaNum-Thin;
+    src: url("../fonts/woff/IRANSansXFaNum-Thin.woff2")format("woff2");
+
+}
+
+@font-face {
+    font-family: IRANSansXFaNum-UltraLight;
+    src: url("../fonts/woff/IRANSansXFaNum-UltraLight.woff2")format("woff2");
+
+}
