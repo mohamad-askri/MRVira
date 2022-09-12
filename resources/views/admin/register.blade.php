@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.rtl.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/register_style.css')}}">
+    <link rel="stylesheet" href="{{asset('fonts/font-faces.css')}}">
 
 
     <title>Mr.Vira</title>
