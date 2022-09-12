@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/admin/register', function () {
-    return view('admin.register');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/register',[RegisterController::class,'index'])->name('admin.register');
+    Route::get('/login',[LoginController::class,'index'])->name('admin.login');
+        // Matches The "/admin/users" UR);
 });
+
+//Route::get('/admin/register', function () {
+//    return view('admin.register');
+//});

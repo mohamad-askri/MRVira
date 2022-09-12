@@ -1,0 +1,73 @@
+
+body{
+
+    position: relative;
+    color: #ffffff;
+    direction: rtl;
+    background: #1F2128;
+    background-image: url("/grad_img/Vector (1).png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 0px 250px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #A044FF;
+}
+
+
+input{
+    height: 56px;
+    background: #EDEDED;
+    font-family: IRANSansXFaNum-Light;
+    font-size: 16px;
+}
+
+input[type="checkbox"]{
+    background:#1F2128 ;
+    border: 1.5px solid #41444B;
+    width: 18.5px;
+    height: 18.5px;
+}
+
+button{
+    width: 100%;
+    height: 56px;
+    background: linear-gradient(180deg, #6A3093 0%, #A044FF 100%);
+    border:hidden;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: IRANSansXFaNum-Medium;
+    font-size: 16px
+}
+
+#username-input{
+    background-image: url("/icons/username-icon.svg");
+    background-position-x: 96%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    padding-right: 46px;
+}
+
+
+#phone-input{
+    background-image: url("/icons/phone-icon.svg");
+    background-position-x: 96%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    padding-right: 46px;
+}
+
+#password-input{
+    background-image: url("/icons/password-icon.svg");
+    background-position-x: 96%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    padding-right: 46px;
+
+}
