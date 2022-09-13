@@ -11,18 +11,18 @@
             <div class="form-group">
 
                 <form action="" method="post">
-
+                    {{csrf_field()}}
                     <div style="margin: 7% auto 2% auto;width: 40% ;">
                         <h2 style="margin-bottom: 5%;font-family: IRANSansXFaNum-Bold; font-size: 24px"><a href="{{route('admin.login')}}">ورود</a>/ثبت نام</h2>
-                        <input type="text" class="form-control" placeholder="نام کاربری" id="username-input" required>
+                        <input type="text" class="form-control" placeholder="نام کاربری"  name="username" id="username-input" required>
                     </div>
 
                     <div style="margin: 3% auto 2% auto;width: 40%">
-                        <input type="text" class="form-control " placeholder="موبایل" id="phone-input" required>
+                        <input type="text" class="form-control " placeholder="موبایل" name="phone" id="phone-input" required>
                     </div>
 
                     <div style="margin: 3% auto 2% auto;width: 40%">
-                        <input type="password" class="form-control " placeholder="رمزعبور" id="password-input" required>
+                        <input type="password" class="form-control " placeholder="رمزعبور" name="password" id="password-input" required>
                     </div>
 
                     <div style="margin: 1% auto 6% auto;width: 40%">
@@ -31,7 +31,7 @@
                     </div>
 
                     <div style="margin: 3% auto 4% auto;width: 40%">
-                        <button>ثبت نام</button>
+                        <button type="submit">ثبت نام</button>
                     </div>
 
                     <div  style="margin: 1% auto 6% auto;width: 40% ;text-align: center">

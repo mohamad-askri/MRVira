@@ -15,13 +15,15 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-
+//
 Route::prefix('admin')->group(function () {
     Route::get('/register',[RegisterController::class,'index'])->name('admin.register');
+    Route::post('/register',[RegisterController::class,'store'])->name('admin.store');
     Route::get('/login',[LoginController::class,'index'])->name('admin.login');
         // Matches The "/admin/users" UR);
 });
 
-//Route::get('/admin/register', function () {
-//    return view('admin.register');
+//Route::get('/', function () {
+////    return view('admin.register');
+//    echo 22;
 //});
