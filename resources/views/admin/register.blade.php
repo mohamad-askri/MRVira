@@ -31,7 +31,7 @@
                     </div>
 
                     <div style="margin: 3% auto 4% auto;width: 40%">
-                        <button >ثبت نام</button>
+                        <button  >ثبت نام</button>
                     </div>
 
                     <div  style="margin: 1% auto 6% auto;width: 40% ;text-align: center">
