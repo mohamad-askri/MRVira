@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UserRequest;
+use App\Models\Admin;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -25,7 +26,7 @@ class RegisterController extends Controller
          'password'=>request()->input('password'),
 
      ];
-     $new_admin=User::create( $admin_data);
+     $new_admin=Admin::create( $admin_data);
 if ($new_admin ){
 echo "welcome";
 }

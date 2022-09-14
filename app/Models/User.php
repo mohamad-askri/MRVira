@@ -18,9 +18,7 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $table='admins';
-protected $primaryKey='admin_id';
-protected $guarded=['admin_id'];
+
 
 
     /**

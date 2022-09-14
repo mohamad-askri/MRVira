@@ -26,12 +26,12 @@
                     </div>
 
                     <div style="margin: 1% auto 6% auto;width: 40%">
-                        <input type="checkbox" class="form-check-input">
+                        <input type="checkbox" class="form-check-input" required>
                         <label for="" class="px-2" style="font-family: IRANSansXFaNum-Medium;font-size: 14px">تمامی <a href="#">شرایط و قوانین</a> را میپذیرم.</label>
                     </div>
 
                     <div style="margin: 3% auto 4% auto;width: 40%">
-                        <button type="submit">ثبت نام</button>
+                        <button >ثبت نام</button>
                     </div>
 
                     <div  style="margin: 1% auto 6% auto;width: 40% ;text-align: center">
