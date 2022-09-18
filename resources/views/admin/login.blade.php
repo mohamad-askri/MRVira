@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{asset('css/admin/login_style.css')}}">
 @endsection
 @section('content')
-
+    @include('layouts.errors')
     <div class="container">
         <div class="row">
 
@@ -13,11 +13,11 @@
 
                     <div style="margin: 9% auto 2% auto;width: 40% ;">
                         <h2 style="margin-bottom: 10%;font-family: IRANSansXFaNum-Bold; font-size: 24px">ورود/<a href="{{route('admin.register')}}">ثبت نام</a></h2>
-                        <input type="text" class="form-control" placeholder="نام کاربری" id="username-input" required>
+                        <input type="text" class="form-control" placeholder="نام کاربری" id="username-input" >
                     </div>
 
                     <div style="margin: 3% auto 2% auto;width: 40%">
-                        <input type="password" class="form-control " placeholder="رمزعبور" id="password-input" required>
+                        <input type="password" class="form-control " placeholder="رمزعبور" id="password-input" >
                     </div>
 
                     <div style="margin: 6% auto 6% auto;width: 40%">
@@ -26,7 +26,7 @@
                     </div>
 
                     <div style="margin: 10% auto 4% auto;width: 40%">
-                        <button>ثبت نام</button>
+                        <button>ورود</button>
                     </div>
 
 
