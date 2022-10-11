@@ -1,19 +1,44 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.rtl.min.css')}}">
-    <link rel="stylesheet" href="{{asset('fonts/font-faces.css')}}">
-    @yield('links')
-    <title>Mr.Vira</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-@yield('content')
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
-</body>
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        <!-- Styles -->
+        @livewireStyles
+    </head>
+    <body class="font-sans antialiased">
+        <x-jet-banner />
+
+        <div class="min-h-screen bg-gray-100">
+            @livewire('navigation-menu')
+
+            <!-- Page Heading -->
+            @if (isset($header))
+                <header class="bg-white shadow">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endif
+
+            <!-- Page Content -->
+            <main>
+                {{ $slot }}
+            </main>
+        </div>
+
+        @stack('modals')
+
+        @livewireScripts
+    </body>
 </html>

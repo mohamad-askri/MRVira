@@ -31,9 +31,9 @@
 
                     <div style="margin: 3% auto 2% auto;width: 40%">
                         <input type="password" class="form-control " placeholder="رمزعبور" name="password" id="password-input" >
-                        @error('password')
-                        {{$message}}
-                        @enderror
+                        <span>  @error('password')
+                            {{$message}}
+                            @enderror</span>
                     </div>
 
                     <div style="margin: 1% auto 6% auto;width: 40%">
